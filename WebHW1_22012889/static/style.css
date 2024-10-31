@@ -1,0 +1,310 @@
+/* default body styles*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+}
+
+/* navigation bar styles */
+.navbar {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space out title and buttons */
+    align-items: center; /* Center items vertically */
+    background-color: rgb(238, 114, 135); /* Background color for the navbar */
+    padding: 15px; 
+    color: white;
+}
+
+/* Navigation bar button styles */
+.nav-button {
+    padding: 10px 15px; /* Padding for buttons */
+    border: none; /* Remove default border */
+    background-color: #ffffff; /* White background for buttons */
+    color: rgb(238, 114, 135); /* Text color for buttons */
+    font-size: 16px; /* Font size */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+/* nav bar button box */
+.button-container {
+    display: flex;
+    margin-right: 150px; /* Add a top margin to create space above */
+    justify-content: flex-end; /* Right buttons horizontally */
+    gap: 10px; /* Optional: space between buttons */
+    margin-bottom: 20px; /* Space below the button container */
+}
+
+/* Styles when hover on button */
+.nav-button:hover {
+    background-color: #dc3545; /* Change background on hover */
+    color: white; /* Change text color on hover */
+}
+/* navbar title styles */
+.title {
+    font-size: 24px; /* Title font size */
+    font-weight: bold; 
+    margin: 0 20px; 
+}
+
+/* Submit form styles */
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+    margin: 0 auto 30px;
+}
+
+/* Input text area for form styles */
+input[type="text"],
+textarea {
+    width: calc(100% - 22px); /* Adjust width to account for padding */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* button for edit and delete styles*/
+button {
+    padding: 10px 15px;
+    margin: 5px 0;
+    border: none;
+    background-color: rgb(238, 114, 135);
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #dc3545;
+}
+
+/* Submission Form title box styles*/
+.title-box {
+    background-color: #9c323d;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 30px; /* Space between the title and the form */
+}
+
+/* Submission Form title box font styles */
+.title-box h1 {
+    margin: 0;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Submission Form and todo list container */
+.container {
+    padding: 20px;
+    display: flex; /* Use flexbox to arrange children side by side */
+    justify-content: space-between; 
+    align-items: flex-start; /* Align items to the top */
+    margin-left: 100px; /* Add a top margin to create space above */
+
+}
+
+/* Submission Form box styles*/
+.form-container {
+    margin-top: 100px; /* Add a top margin to create space above */
+    width: 600px; /* Set a width for the form */
+    padding: 20px; /* Add padding gap between box */
+    margin-bottom: 30px; /* Add margin below the form for the gap */
+    border: 1px solid #ccc; /* Optional border */
+    border-radius: 5px; /* Optional rounded corners */
+    background-color: #f9f9f9; /* Optional background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+/* Add todo button styles */
+.button-submit {
+    display: flex;            /* Use flexbox for alignment */
+    justify-content: flex-end; /* Align the button to the right */
+    margin-top: 20px;        /* Optional: Add some space above the button */
+    margin-right: 10px;
+}
+
+/* search bar button styles */
+.search-bar {
+    display: flex; /* Use flexbox for the search bar to align input and button */
+    margin-top: 10px; /* Space above the search bar */
+}
+
+.search-bar input {
+    margin-right: 5px; /* Space between input and button */
+}
+
+/* todo list styles */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+/* Space between input and button */
+ul li button {
+    background-color: #dc3545;
+    margin-left: 10px;
+}
+
+ul li button:hover {
+    background-color: #c82333;
+}
+
+/* todo list box*/
+.todo-box {
+    width: 400px; /* Adjust width */
+    max-width: 100%; /* Responsive */
+    border: 1px solid #ccc; /* Border around the box */
+    border-radius: 5px; /* Optional: rounded corners */
+    padding: 20px; /* Padding inside the box */
+    margin: 20px 0; /* Margin around the box */
+    margin-right: 160px; /* Add a top margin to create space above */
+    background-color: #f9f9f9; /* Background color for the box */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for depth */
+}
+
+.todo-box h2 {
+    margin-top: 0; /* Remove top margin from heading */
+}
+
+/* pagination button styles*/
+.page-buttons button {
+    margin: 0 10px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(238, 114, 135);
+    color: white;
+    transition: background-color 0.3s;
+    justify-content: flex-end; /* Align pagination to the right */
+    margin-bottom: 20px; /* Space below the pagination container */
+}
+
+.page-buttons button:hover {
+    background-color: #c82333;
+}
+
+/* page button disabled if no number before of after*/
+.page-buttons button:disabled {
+    background-color: #c0c0c0;
+    cursor: not-allowed;
+}
+
+/* styles for each todo information */
+.todo-item {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space out the content */
+    padding: 10px; /* Add padding */
+    border: 1px solid #ccc; /* Add a border */
+    margin-bottom: 10px; /* Space between todos */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* todo box contain checkbox and details styles*/
+.todo-content {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    flex-grow: 1; /* Allow this to take the available space */
+}
+
+/* todo item styles*/
+.todo-details {
+    display: block;
+    flex-grow: 1; /* Allow this section to grow */
+}
+
+/* checkbox styles*/
+.checkbox-container {
+    margin-right: 15px; /* Space between checkbox and title */
+}
+
+/*completed todos style*/
+.completed {
+    text-decoration: line-through; /* Cross out the completed title */
+    color: gainsboro; /* Change color of the completed text */
+}
+
+.action-buttons {
+    display: flex; /* Display action buttons in a row */
+    gap: 5px; /* Space between buttons */
+}
+
+/* description styles*/
+.description {
+    display: block; /* Ensure description is on a new line */
+    margin-top: 5px; /* Space between title and description */
+    font-size: 0.8em; /* Smaller font size for description */
+    color: #555; /* Darker color for description */
+}
+
+/* Hide the default checkbox */
+.custom-checkbox input {
+    display: none; /* or use visibility: hidden; */
+}
+
+/* Style the custom checkbox */
+.custom-checkbox {
+    position: relative;
+    display: inline-block;
+    width: 20px; /* Width of the custom checkbox */
+    height: 20px; /* Height of the custom checkbox */
+}
+
+/* Create a checkmark */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid pink; /* Border color of the checkbox */
+    border-radius: 50%; /* Round checkmark */
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+}
+
+/* When checkbox is checked */
+.custom-checkbox input:checked + .checkmark {
+    border-color: #c82333; /* Border color when checked */
+}
+
+/* Create a checkmark/indicator (optional) */
+.checkmark::after {
+    content: "";
+    position: absolute;
+    display: none; /* Hide the checkmark by default */
+}
+
+/* Show the checkmark when checked */
+.custom-checkbox input:checked + .checkmark::after {
+    display: block; /* Show checkmark */
+}
+
+/* Style the checkmark (optional) */
+.custom-checkbox .checkmark::after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid black; /* Checkmark color */
+    border-width: 0 2px 2px 0; /* Create the checkmark shape */
+    transform: rotate(45deg); /* Rotate to form a checkmark */
+}
